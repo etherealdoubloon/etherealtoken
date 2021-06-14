@@ -6,8 +6,8 @@ pragma solidity 0.6.6;
 // Deployed to : 0x5c01b82eD260459BfA917b0d070BddE233d4E194
 // Symbol      : ETR
 // Name        : Ethereal
-// Total supply: 1000000000000000000
-// Decimals    : 18
+// Total supply: 10000000000000000000
+// Decimals    : 8
 //
 // Enjoy.
 //
@@ -116,7 +116,7 @@ contract Ethereal is ERC20Interface, Owned, SafeMath {
         symbol = "ETR";
         name = "Ethereal";
         decimals = 8;
-        _totalSupply = 1000000000000000000;
+        _totalSupply = 10000000000000000000;
         balances[0x5c01b82eD260459BfA917b0d070BddE233d4E194] = _totalSupply;
         emit Transfer(address(0), 0x5c01b82eD260459BfA917b0d070BddE233d4E194, _totalSupply);
     }
